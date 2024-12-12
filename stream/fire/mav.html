@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+</head>
+<body>
+  <div id="oper"></div>
+  <div id="vid"></div>
+  <script>
+   player = new Clappr.Player({
+   source: "https://d3h07n6l1exhds.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-0z2yyo4dxctc7/playlist.m3u8",
+   mimeType: "application/x-mpegURL",
+   autoPlay: true, 
+   height: "1080",
+   width: "100%",
+   parentId: "#vid"});
+  </script>
+</body>
+</html>
