@@ -8,15 +8,6 @@
   <div id="oper"></div>
   <div id="vid"></div>
   <script>
-   if (window.location.protocol == "https:") {
-     console.log("You are not connected with the correct protocol.")
-     console.log("Reloading the page to the correct protocol...")
-     window.location = document.URL.replace("https://", "http://");
-   }
-
-   if (window.location.protocol == "http:") {
-     console.log("You are connected with the correct protocol.")
-   }
    player = new Clappr.Player({
    source: "http://tv.utako.moe/js2/index.m3u8",
    mimeType: "application/x-mpegURL",
