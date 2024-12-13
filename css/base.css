@@ -13,8 +13,8 @@ a {
 }
 
 pre {
+    color: mediumpurple;
     font-size: 14px;
-    color: rebeccapurple;
 }
 span {
     font-family: Chomsky;
@@ -27,7 +27,7 @@ span {
     color: orangered;
 }
 #earth {
-    color: forestgreen
+    color: seagreen
 }
 #air {
     color: skyblue
