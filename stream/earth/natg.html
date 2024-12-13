@@ -2,8 +2,19 @@
 <html>
 <head>
    <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
 </head>
 <body>
-    <iframe class="video responsive" marginheight="0" marginwidth="0" src="https://thedaddy.to/embed/stream-328.php" name="iframe_a" scrolling="no" allowfullscreen="yes" width="100%" height="1080" frameborder="0">Your Browser Do not Support Iframe</iframe>
+  <div id="oper"></div>
+  <div id="vid"></div>
+  <script>
+   player = new Clappr.Player({
+   source: "https://v11.thetvapp.to/hls/NationalGeographicEast/index.m3u8?token=V3J0YlRCS0dCajZpdFVkbWczZ2lWc3ZBcWtKWVBYZG9XTUgwWTRreQ==",
+   mimeType: "application/x-mpegURL",
+   autoPlay: true, 
+   height: "1080",
+   width: "100%",
+   parentId: "#vid"});
+  </script>
 </body>
 </html>
