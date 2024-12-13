@@ -1,12 +1,15 @@
 body {
     background-color: black;
+    color: dimgrey;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
+    font-family: 'Share-TechMono'
 }
 a {
-    color: grey;
+    color: slategray;
     text-decoration: none;
     font-size: 30px;
+    font-family: TheGoodMonolith
 }
 
 pre {
@@ -18,7 +21,7 @@ span {
     font-size: 40px;
 }
 #ice{
-    color: lightblue;
+    color: lightcyan;
 }
 #fire {
     color: orangered;
@@ -26,8 +29,8 @@ span {
 #earth {
     color: forestgreen
 }
-#space {
-    color: navy
+#air {
+    color: skyblue
 }
 #jp {
     color: lightpink;
