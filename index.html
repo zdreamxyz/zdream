@@ -40,14 +40,20 @@
         function ice() {
             document.getElementById("frame").src = document.getElementById("ice_list").value;
             document.getElementById('frame').src += ''
+            document.getElementById('fire_list').value = ""
+            document.getElementById('jp_list').value = ""
         }
         function fire() {
             document.getElementById("frame").src = document.getElementById("fire_list").value;
             document.getElementById('frame').src += ''
+            document.getElementById('ice_list').value = ""
+            document.getElementById('jp_list').value = ""
         }
         function jp() {
             document.getElementById("frame").src = document.getElementById("jp_list").value;
             document.getElementById('frame').src += ''
+            document.getElementById('ice_list').value = ""
+            document.getElementById('fire_list').value = ""
         }
     </script>
 

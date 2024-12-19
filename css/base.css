@@ -11,13 +11,16 @@ a {
     font-size: 30px;
     font-family: TheGoodMonolith
 }
+iframe {
+    margin-top: 50px;
+}
 pre {
     color: mediumpurple;
     font-size: 14px;
 }
 span {
     font-family: Chomsky;
-    font-size: 40px;
+    font-size: 50px;
 }
 #ice {
     background-color: black;
@@ -55,8 +58,9 @@ span {
     display: inline;
     color: lightpink;
 }
-    select {
+select {
+    font-size: 30px;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Share-TechMono'
 }

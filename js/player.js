@@ -4,4 +4,6 @@ player = new Clappr.Player({
 	height: "720",
 	width: "100%",
 	parentId: "#vid",
+	mute: "true",
+	autoPlay: "true",
 });
