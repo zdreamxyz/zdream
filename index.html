@@ -7,6 +7,7 @@
     <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/share-techmono-2" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
 </head>
 <body>
     <pre>
@@ -22,37 +23,66 @@
                                                                  \/__/       
 
     </pre>
-    <span id="ice">Ice</span>
+
+    <div id="ice">
+        <span>Ice</span>
+    </div>
+    <div id="fire">
+        <span>Fire</span>
+    </div>
+    <div id="jp">
+        <span>Japan</span>
+    </div>
+
     <br />
-    <a href="247/ice/nhl.html">NHL</a>
-    <br />
-    <br />
-    <span id="fire">Fire</span>
-    <br />
-    <a href="247/fire/flo.html">Flo</a> -
-    <a href="247/fire/ra.html">RA</a> -
-    <a href="247/fire/dirtv.html">DirTV</a> -
-    <a href="247/fire/mavs.html">MAVS</a>
-    <br />
-    <br />
-    <span id="jp">Japan</span>
-    <br />
-    <a href="247/jp/js1.html">JS1</a> -
-    <a href="247/jp/js2.html">JS2</a> -
-    <a href="247/jp/js3.html">JS3</a> -
-    <a href="247/jp/js4.html">JS4</a>
-    <br />
-    <a href="247/jp/nhkg.html">NHKG</a> -
-    <a href="247/jp/nhkw.html">NHKW</a> -
-    <a href="247/jp/nhkwp1.html">NHKWP1</a> -
-    <a href="247/jp/nhkwp2.html">NHKWP2</a>
-    <br />
-    <a href="247/jp/tbs1.html">TBS1</a> -
-    <a href="247/jp/tbs1.html">TBS2</a>
-    <br />
-    <a href="247/jp/ss.html">Space Shower</a>
-    <br />
-    <!-- HTTP only for most JP -->
-    <br />
+
+    <script>
+        function ice() {
+            document.getElementById("frame").src = document.getElementById("ice_list").value;
+            document.getElementById('frame').src += ''
+        }
+        function fire() {
+            document.getElementById("frame").src = document.getElementById("fire_list").value;
+            document.getElementById('frame').src += ''
+        }
+        function jp() {
+            document.getElementById("frame").src = document.getElementById("jp_list").value;
+            document.getElementById('frame').src += ''
+        }
+    </script>
+
+    <select onchange="ice()" name="ice" id="ice_list">
+        <option></option>
+        <option value="ice/nhl.html">NHL</option>
+    </select>
+    <select onchange="fire()" id="fire_list">
+        <option></option>
+        <option value="fire/flo.html">Flo</option>
+        <option value="fire/ra.html">RA</option>
+        <option value="fire/dirtv.html">DirTV</option>
+        <option value="fire/mavs.html">MAVS</option>
+        <option value="fire/snox.html">SnoX</option>
+    </select>
+    <select onchange="jp()" id="jp_list">
+        <option></option>
+        <option value="jp/js1.html">JS1</option>
+        <option value="jp/js2.html">JS2</option>
+        <option value="jp/js3.html">JS3</option>
+        <option value="jp/js4.html">JS4</option>
+        <option value="jp/nhkg.html">NHKG</option>
+        <option value="jp/nhkw.html">NHKW</option>
+        <option value="jp/nhkwp1.html">NHKWP1</option>
+        <option value="jp/nhkwp2.html">NHKWP2</option>
+        <option value="jp/ss.html">SS</option>
+        <option value="jp/tbs1.html">TBS1</option>
+        <option value="jp/tbs2.html">TBS2</option>
+    </select>
+
+    <iframe id="frame" src="ice/nhl.html"
+            height="1080px"
+            width="100%"
+            scrolling="no"
+            frameborder="0"
+    </iframe>
 </body>
 </html>

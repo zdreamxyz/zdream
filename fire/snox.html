@@ -3,21 +3,13 @@
 <head>
     <title>zdream.xyz</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
 </head>
 <body>
-    <div id="oper"></div>
     <div id="vid"></div>
-    <script>
-        player = new Clappr.Player({
-        source: "https://in.jdx3.org/stream3.m3u8?id=jdx3_flo-1",
-        mimeType: "application/x-mpegURL",
-        autoPlay: true,
-        height: "720",
-        width: "100%",
-        parentId: "#vid"});
-    </script>
+    <source id="sauce" src="https://in.jdx3.org/stream3.m3u8?id=jdx3_flo-1"/>
+    <script src="../js/player.js"></script>
     <style>
         .snowflake {
             color: #fff;
