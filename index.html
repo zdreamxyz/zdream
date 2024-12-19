@@ -47,6 +47,11 @@
         }
         function jp() {
             document.getElementById("frame").src = document.getElementById("jp_list").value;
+            if (window.location.protocol === 'https:') {
+	            location.replace('http://' + location.href.split('//')[1]);
+            } else {
+                console.log('This page is not using HTTPS.');
+            }
             document.getElementById('frame').src += ''
         }
     </script>
