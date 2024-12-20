@@ -23,7 +23,6 @@
                                                                  \/__/       
 
     </pre>
-
     <div id="ice">
         <span>Ice</span>
     </div>
@@ -33,31 +32,25 @@
     <div id="jp">
         <span>Japan</span>
     </div>
-
     <br />
-
     <script>
         function ice() {
-            document.getElementById("frame").src = document.getElementById("ice_list").value;
-            document.getElementById('frame').src += ''
             document.getElementById('fire_list').value = ""
             document.getElementById('jp_list').value = ""
+            document.getElementById("frame").src = document.getElementById("ice_list").value;
         }
         function fire() {
-            document.getElementById("frame").src = document.getElementById("fire_list").value;
-            document.getElementById('frame').src += ''
             document.getElementById('ice_list').value = ""
             document.getElementById('jp_list').value = ""
+            document.getElementById("frame").src = document.getElementById("fire_list").value;
         }
         function jp() {
-            document.getElementById("frame").src = document.getElementById("jp_list").value;
-            document.getElementById('frame').src += ''
             document.getElementById('ice_list').value = ""
             document.getElementById('fire_list').value = ""
+            document.getElementById("frame").src = document.getElementById("jp_list").value;
         }
     </script>
-
-    <select onchange="ice()" name="ice" id="ice_list">
+    <select onchange="ice()" id="ice_list">
         <option></option>
         <option value="ice/nhl.html">NHL</option>
     </select>
@@ -83,8 +76,7 @@
         <option value="jp/tbs1.html">TBS1</option>
         <option value="jp/tbs2.html">TBS2</option>
     </select>
-
-    <iframe id="frame" src="ice/nhl.html"
+    <iframe id="frame" src=""
             height="1080px"
             width="100%"
             scrolling="no"
