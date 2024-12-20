@@ -31,12 +31,12 @@ span {
 #fire {
     background-color: black;
     display: inline;
-    color: red;
+    color: orangered;
 }
 #jp {
     background-color: black;
-    margin-left: 10%;
     display: inline;
+    margin-left: 10%;
     color: lightpink;
 }
 #ice_list {
@@ -44,23 +44,27 @@ span {
     display: inline;
     margin-right: 10%;
     color: lightcyan;
+    box-shadow: 1px 1px 1px lightcyan;
 }
 
 #fire_list {
     background-color: black;
     display: inline;
-    color: red;
+    color: orangered;
+    box-shadow: 1px 1px 1px orangered;
 }
 
 #jp_list {
     background-color: black;
-    margin-left: 10%;
     display: inline;
+    margin-left: 10%;
     color: lightpink;
+    box-shadow: 1px 1px 1px lightpink;
 }
 select {
     font-size: 30px;
     padding: 2px;
     border-radius: 10px;
-    font-family: 'Share-TechMono'
+    border-color: dimgrey;
+    font-family: 'Share-TechMono';
 }
