@@ -23,33 +23,37 @@
                                                                  \/__/       
 
     </pre>
+    <!--
     <div id="ice">
         <span>Ice</span>
     </div>
     <div id="fire">
         <span>Fire</span>
     </div>
+     -->
     <div id="jp">
         <span>Japan</span>
     </div>
     <br />
     <script>
         function ice() {
-            document.getElementById('fire_list').value = ""
-            document.getElementById('jp_list').value = ""
-            document.getElementById("frame").src = document.getElementById("ice_list").value;
+        document.getElementById('fire_list').value = ""
+        document.getElementById('jp_list').value = ""
+        document.getElementById("frame").src = document.getElementById("ice_list").value;
         }
         function fire() {
-            document.getElementById('ice_list').value = ""
-            document.getElementById('jp_list').value = ""
-            document.getElementById("frame").src = document.getElementById("fire_list").value;
+        document.getElementById('ice_list').value = ""
+        document.getElementById('jp_list').value = ""
+        document.getElementById("frame").src = document.getElementById("fire_list").value;
         }
         function jp() {
-            document.getElementById('ice_list').value = ""
-            document.getElementById('fire_list').value = ""
-            document.getElementById("frame").src = document.getElementById("jp_list").value;
+        
+        //document.getElementById('ice_list').value = ""
+        //document.getElementById('fire_list').value = ""
+        document.getElementById("frame").src = document.getElementById("jp_list").value;
         }
     </script>
+    <!--
     <select onchange="ice()" id="ice_list">
         <option></option>
         <option value="ice/nhl.html">NHL</option>
@@ -60,21 +64,28 @@
         <option value="fire/ra.html">RA</option>
         <option value="fire/dirtv.html">DirTV</option>
         <option value="fire/mavs.html">MAVS</option>
-        <option value="fire/snox.html">SnoX</option>
     </select>
+    -->
     <select onchange="jp()" id="jp_list">
         <option></option>
+        <option value="jp/atx.html">AT-X</option>
+        <option value="jp/anmx.html">Animax</option>
+        <option value="jp/asahi.html">Asahi</option>
+        <option value="jp/fuji.html">Fuji</option>
         <option value="jp/js1.html">JS1</option>
         <option value="jp/js2.html">JS2</option>
         <option value="jp/js3.html">JS3</option>
         <option value="jp/js4.html">JS4</option>
+        <option value="jp/nippon.html">NipponTV</option>
+        <option value="jp/nhkbs.html">NHKBS</option>
         <option value="jp/nhkg.html">NHKG</option>
         <option value="jp/nhkw.html">NHKW</option>
         <option value="jp/nhkwp1.html">NHKWP1</option>
         <option value="jp/nhkwp2.html">NHKWP2</option>
+        <option value="jp/tbs.html">TBS</option>
+        <option value="jp/tokyo.html">TV Tokyo</option>
+        <option value="jp/mx1.html">Tokyo MX1</option>
         <option value="jp/ss.html">SS</option>
-        <option value="jp/tbs1.html">TBS1</option>
-        <option value="jp/tbs2.html">TBS2</option>
     </select>
     <iframe id="frame" src=""
             height="1080px"

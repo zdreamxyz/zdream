@@ -36,7 +36,7 @@ span {
 #jp {
     background-color: black;
     display: inline;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     color: lightpink;
 }
 #ice_list {
@@ -57,7 +57,7 @@ span {
 #jp_list {
     background-color: black;
     display: inline;
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     color: lightpink;
     box-shadow: 1px 1px 1px lightpink;
 }
